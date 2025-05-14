@@ -23,16 +23,27 @@
 ## Структура проекта
 
 soundcloud-analysis/
+
 ├── README.md
+
 ├── requirements.txt
+
 ├── data/
+
 │   ├── soundcloud_tracks.csv
+
 │   ├── soundcloud_tracks_cleaned.csv
+
 ├── notebooks/
+
 │   ├── soundcloud_analysis.ipynb
+
 ├── dashboard/
+
 │   ├── app.py
+
 │   ├── assets/
+
 │   │   ├── style.css
 
 ## Возможности
