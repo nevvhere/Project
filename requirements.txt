@@ -1,0 +1,5 @@
+requests
+pandas~=2.2.3
+time
+matplotlib~=3.10.1
+seaborn~=0.13.2
