@@ -10,7 +10,7 @@ def load_css():
     with open("assets/style.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# Загрузка данных с кэшированием
+# Загрузка данных
 @st.cache_data
 def load_data():
     return pd.read_csv("../data/soundcloud_tracks_cleaned.csv", sep=';')
@@ -47,7 +47,7 @@ def main():
             value=int(df['listens'].quantile(0.25))
         )
     
-    # Применение фильтров
+    # фильтры
     filtered_df = df[
         (df['tag'].isin(selected_tags)) & 
         (df['listens'] >= min_plays)
