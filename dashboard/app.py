@@ -13,7 +13,7 @@ def load_css():
 # Загрузка данных с кэшированием
 @st.cache_data
 def load_data():
-    return pd.read_csv("../data/soundcloud_tracks_cleaned.csv")
+    return pd.read_csv("../data/soundcloud_tracks_cleaned.csv", sep=';')
 
 # Анализ пользовательских тегов
 def analyze_tags(tags_series):
@@ -26,12 +26,6 @@ def analyze_tags(tags_series):
 def main():
     # Инициализация
     load_css()
-    st.set_page_config(
-        page_title="SoundCloud Analytics Dashboard",
-        page_icon="🎵",
-        layout="wide"
-    )
-    
     st.title("📊 Аналитика SoundCloud")
     st.markdown("Визуализация данных о треках и их популярности")
     
@@ -69,18 +63,6 @@ def main():
     tab1, tab2, tab3 = st.tabs(["📈 Обзор", "🎵 По жанрам", "🏆 Топ треки"])
     
     with tab1:
-        st.header("Общая статистика")
-        
-        # Распределение прослушиваний
-        fig1 = px.histogram(
-            filtered_df,
-            x='listens',
-            nbins=50,
-            title="Распределение количества прослушиваний",
-            log_x=True
-        )
-        st.plotly_chart(fig1, use_container_width=True)
-        
         # Корреляционная матрица
         st.subheader("Корреляция между показателями")
         corr = filtered_df[['listens', 'likes', 'comments']].corr()
