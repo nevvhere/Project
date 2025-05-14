@@ -20,32 +20,6 @@
 - Как теги влияют на популярность треков (прослушивания, лайки, комментарии)
 - Какие теги самые популярные среди выбранных категорий (хип-хоп, джаз, чилл, трэп, инди, поп)
 
-## Структура проекта
-
-soundcloud-analysis/
-
-├── README.md
-
-├── requirements.txt
-
-├── data/
-
-│   ├── soundcloud_tracks.csv
-
-│   ├── soundcloud_tracks_cleaned.csv
-
-├── notebooks/
-
-│   ├── soundcloud_analysis.ipynb
-
-├── dashboard/
-
-│   ├── app.py
-
-│   ├── assets/
-
-│   │   ├── style.css
-
 ## Возможности
 
 - Интерактивная панель с визуализацией данных
