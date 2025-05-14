@@ -28,30 +28,19 @@
 - Визуализация самых популярных треков
 - Анализ корреляции между прослушиваниями, лайками и комментариями
 
-## Установка
+## Установка и запуск
 
-1. Клонируйте репозиторий:
+1. Клонируйте репозиторий и установите зависимости одной командой:
 ```bash
-git clone https://github.com/вашusername/soundcloud-analysis.git
-cd soundcloud-analysis```
-
-2. Установите зависимости:
-```bash
-pip install -r requirements.txt```
-
-3. Запустите панель Streamlit:
-```bash
-streamlit run dashboard/app.py```
-
-## Источники данных
-
-Собраны через SoundCloud API с использованием Python requests
-Исходный набор данных: data/soundcloud_tracks.csv
-Очищенный набор данных: data/soundcloud_tracks_cleaned.csv
+git clone https://github.com/вашusername/soundcloud-analysis.git && \
+cd soundcloud-analysis && \
+pip install -r requirements.txt && \
+streamlit run dashboard/app.py
+```
 
 ## Использование
 
-После запуска панели вы можете:
+**После запуска панели вы можете:**
 
 Просматривать общую статистику по трекам
 Фильтровать данные по жанру/тегу
