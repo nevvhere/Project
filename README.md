@@ -34,7 +34,7 @@
 ```bash
 git clone https://github.com/nevvhere/Project.git && \
 cd Project && \
-pip install -r requirements.txt && \
+pip3 install -r requirements.txt && \
 streamlit run dashboard/app.py
 ```
 
