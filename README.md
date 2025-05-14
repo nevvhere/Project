@@ -33,13 +33,15 @@
 1. Клонируйте репозиторий:
 ```bash
 git clone https://github.com/вашusername/soundcloud-analysis.git
-cd soundcloud-analysis
-Установите зависимости:
-bash
-pip install -r requirements.txt
-Запустите панель Streamlit:
-bash
-streamlit run dashboard/app.py
+cd soundcloud-analysis```
+
+2. Установите зависимости:
+```bash
+pip install -r requirements.txt```
+
+3. Запустите панель Streamlit:
+```bash
+streamlit run dashboard/app.py```
 
 ## Источники данных
 
