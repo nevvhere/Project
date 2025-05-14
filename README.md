@@ -32,7 +32,7 @@
 
 Клонируйте репозиторий и установите зависимости одной командой:
 ```bash
-git clone https://github.com/margoblina/Project.git && \
+git clone https://github.com/nevvhere/Project.git && \
 cd Project && \
 pip install -r requirements.txt && \
 streamlit run dashboard/app.py
